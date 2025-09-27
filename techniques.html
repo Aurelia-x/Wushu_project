@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>招式学习 · 武学助手</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="techniques">
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">武学助手</div>
+        <nav class="nav">
+          <a href="index.html">首页</a>
+          <a href="techniques.html" class="active">招式学习</a>
+          <a href="feedback.html">演练反馈</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="page-title">
+        <h1>招式学习</h1>
+        <p>选择一个招式查看动作分解与练习要点。</p>
+      </section>
+
+      <section class="layout-two">
+        <aside class="sidebar">
+          <h3>分类</h3>
+          <ul id="categoryList" class="list"></ul>
+        </aside>
+        <section class="content">
+          <div class="grid" id="techniqueGrid"></div>
+          <div class="detail" id="detailPanel">
+            <h2 id="detailTitle">请选择一个招式</h2>
+            <div id="detailBody" class="detail-body">
+              <p>在左侧选择分类，或在上方选择某个招式卡片。</p>
+            </div>
+            <div class="detail-actions">
+              <button class="btn" id="startPracticeBtn" disabled>开始练习</button>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>招式学习模块</small>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>

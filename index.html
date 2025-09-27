@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>武学助手 · 首页</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="home">
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">武学助手</div>
+        <nav class="nav">
+          <a href="index.html" class="active">首页</a>
+          <a href="techniques.html">招式学习</a>
+          <a href="feedback.html">演练反馈</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>提升你的武学之路</h1>
+        <p>在这里学习核心招式，并获得演练后的智能反馈与建议。</p>
+        <div class="hero-actions">
+          <a class="btn" href="techniques.html">开始学习招式</a>
+          <a class="btn btn-outline" href="feedback.html">前往演练反馈</a>
+        </div>
+      </section>
+
+      <section class="cards">
+        <article class="card">
+          <h2>招式学习模块</h2>
+          <p>分层次讲解与演示常用招式，支持要点、动作分解与练习提示。</p>
+          <a class="card-link" href="techniques.html">进入模块</a>
+        </article>
+        <article class="card">
+          <h2>演练反馈模块</h2>
+          <p>记录你的练习体验，获得针对性改进建议与下一步训练计划。</p>
+          <a class="card-link" href="feedback.html">进入模块</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© 2025 武学助手 · 练习成就习惯</small>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>灵枢武境 - 传统武术数字化传承助手</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>灵枢武境</h1>
+        <p>传统武术数字化传承助手</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#learning">招式学习</a></li>
+            <li><a href="#practice">演练反馈</a></li>
+            <li><a href="#about">关于项目</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="learning" class="section">
+            <h2>招式学习模块</h2>
+            <div class="video-container">
+                <video id="demo-video" controls>
+                    <source src="assets/demo.mp4" type="video/mp4">
+                    您的浏览器不支持视频播放
+                </video>
+            </div>
+            <div class="controls">
+                <button onclick="changeSpeed(0.5)">0.5x</button>
+                <button onclick="changeSpeed(1)">1x</button>
+                <button onclick="changeSpeed(1.5)">1.5x</button>
+                <button onclick="changeSpeed(2)">2x</button>
+            </div>
+        </section>
+
+        <section id="practice" class="section">
+            <h2>演练反馈模块</h2>
+            <div class="camera-container">
+                <video id="webcam" autoplay playsinline></video>
+                <canvas id="pose-canvas"></canvas>
+            </div>
+            <div class="feedback-controls">
+                <button id="start-camera">开启摄像头</button>
+                <button id="analyze-pose" disabled>分析动作</button>
+            </div>
+            <div id="feedback-result" class="feedback-result">
+                <p>反馈信息将显示在这里</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 灵枢武境项目组</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

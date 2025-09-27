@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>演练反馈 · 武学助手</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="feedback">
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">武学助手</div>
+        <nav class="nav">
+          <a href="index.html">首页</a>
+          <a href="techniques.html">招式学习</a>
+          <a href="feedback.html" class="active">演练反馈</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="page-title">
+        <h1>演练反馈</h1>
+        <p>填写你的练习情况，我们为你生成改进建议与下一步计划。</p>
+      </section>
+
+      <section class="feedback-form-section">
+        <form id="feedbackForm" class="form">
+          <div class="form-row">
+            <label for="techniqueName">练习招式</label>
+            <input id="techniqueName" name="techniqueName" placeholder="例如：基础刺拳" required />
+          </div>
+
+          <div class="form-row">
+            <label>自我评分（1-5）</label>
+            <div class="rating-group" id="ratingGroup">
+              <label><input type="radio" name="rating" value="1" required />1</label>
+              <label><input type="radio" name="rating" value="2" />2</label>
+              <label><input type="radio" name="rating" value="3" />3</label>
+              <label><input type="radio" name="rating" value="4" />4</label>
+              <label><input type="radio" name="rating" value="5" />5</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label>遇到的困难</label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="issues" value="节奏不稳定" />节奏不稳定</label>
+              <label><input type="checkbox" name="issues" value="动作不标准" />动作不标准</label>
+              <label><input type="checkbox" name="issues" value="体力不足" />体力不足</label>
+              <label><input type="checkbox" name="issues" value="专注力下降" />专注力下降</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="notes">练习备注</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="记录你的体会与问题"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">生成反馈</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="feedbackResult" class="feedback-result hidden">
+        <h2>你的练习反馈</h2>
+        <div id="feedbackSummary" class="summary"></div>
+        <div id="suggestions" class="suggestions"></div>
+        <div class="detail-actions">
+          <a class="btn btn-outline" href="index.html">返回首页</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>演练反馈模块</small>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
